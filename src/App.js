@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Introduction from './components/Introduction'
+import Section from './components/Section'
+import { academics } from './data/AcademicData'
+import { jobsData } from './data/jobsData'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="container">
+            <Introduction />
+            <Section sectionTitle="Studies" data={academics} />
+            <Section sectionTitle="Work" data={jobsData} />
+        </div>
+    )
 }
 
-export default App;
+export default App
