@@ -1,1 +1,1 @@
-# [View Live] (https://ginnerzapata.github.io/cv-builder/)
+# https://ginnerzapata.github.io/cv-builder/
